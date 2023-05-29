@@ -47,13 +47,14 @@ function buildTasks(){
 
 function getTableDetail(content){
     let td = document.createElement("td");
+    td.setAttribute("class", "text-center");
     td.innerHTML = content;
     return td;
 }
 
 function buildRemoveButton(priority, index){
     let removeButton = document.createElement("button");
-    removeButton.setAttribute("class", "btn btn-danger pt-1 pb-1 removeBtn");
+    removeButton.setAttribute("class", "btn btn-outline-danger pt-1 pb-1 removeBtn");
     let icon = document.createElement('i');
     icon.setAttribute('class', 'fa-regular fa-trash-can');
    // icon.style.color = "#851911";
@@ -63,7 +64,9 @@ function buildRemoveButton(priority, index){
     removeButton.setAttribute("onclick", `removeTask(${priority}, ${index})`);
    // removeButton.style.backgroundColor = "#851911";
     let td = document.createElement("td");
-    return td.appendChild(removeButton);
+    td.setAttribute("class", "text-center");
+    td.appendChild(removeButton);
+    return td;
 }
 
 function removeTask(priority, index){
