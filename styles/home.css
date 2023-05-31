@@ -1,11 +1,11 @@
 
-.removeBtn > i{
+/*.removeBtn > i{
     color: #b82116
-}
-.removeBtn:hover > i{
+}*/
+/*.removeBtn:hover > i{
     color: #ffffff;
     transition: 0.5s;
-}
+}*/
 
 @media screen and (max-width: 576px) {
     #inputsSection > div{
